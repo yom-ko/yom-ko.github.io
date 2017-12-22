@@ -1,0 +1,33 @@
+.wrapper {
+  width: 70%;
+  margin: 100px auto 0 auto;
+}
+
+.expression {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.scale {
+  height: 200px;
+  width: 70%;
+  margin: 100px auto;
+  background-image: url('/sprite.png');
+  background-repeat: no-repeat;
+}
+
+.arrow-1 {
+  position: relative;
+  left: 34px;
+  width: 270.5px;
+  height: 10px;
+  border: 2px solid red;
+}
+
+.arrow-2 {
+  position: relative;
+  left: 34px;
+  width: 154.8px;
+  height: 10px;
+  border: 2px solid red;
+}
