@@ -1,33 +1,102 @@
-.wrapper {
+/* Overall wrapper styles */
+.main_wrapper {
   width: 70%;
   margin: 100px auto 0 auto;
 }
 
+
+/* Expression styles */
 .expression {
-  width: 50%;
+  display: table;
+  font-size: 1.5em;
+  width: 18%;
   margin: 0 auto;
 }
 
+.exp_summand_err {
+  background-color: #FCA748;
+}
+
+.exp_sum_input {
+  width: 30px;
+  margin-top: 2px;
+  vertical-align: 3px;
+}
+
+
+/* Scale styles */
 .scale {
   height: 200px;
   width: 70%;
-  margin: 100px auto;
+  margin: 240px auto;
   background-image: url('/sprite.png');
   background-repeat: no-repeat;
+  position: relative;
 }
 
-.arrow-1 {
+
+/* Arrow summands and arrow styles */
+.arrow_1_wrapper {
   position: relative;
-  left: 34px;
-  width: 270.5px;
-  height: 10px;
-  border: 2px solid red;
+  left: 35px;
+  bottom: 115px;
 }
 
-.arrow-2 {
+.arrow_1_summand {
+  display: block;
+  width: 30px;
+  margin: 0 auto;
+}
+
+.arrow_1 {
+  height: 90px;
+  border: 2px solid #AF5F85;
+  border-color: #AF5F85 #AF5F85 transparent #AF5F85;
+  border-radius: 200px 200px 0 0;
+  margin-top: 15px;
+}
+
+.arrow_2_wrapper {
   position: relative;
-  left: 34px;
-  width: 154.8px;
-  height: 10px;
-  border: 2px solid red;
+  left: 33px;
+  bottom: 242px;
+}
+
+.arrow_2_summand {
+  display: block;
+  width: 30px;
+  margin: 0 auto;
+}
+
+.arrow_2 {
+  border: 2px solid #AF5F85;
+  border-color: #AF5F85 #AF5F85 transparent #AF5F85;
+  border-radius: 200px 200px 0 0;
+  margin-top: 15px;
+  height: 90px;
+}
+
+
+/* Arrow summand shared styles */
+.arrow_summand_correct {
+  display: block;
+  width: 1%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.arrow_ending {
+  float: right;
+  border: solid #AF5F85;
+  border-width: 0 2px 2px 0;
+  padding: 4px;
+  margin-top: -12px;
+  margin-right: -4px;
+  transform: rotate(45deg);
+}
+
+
+/* Shared styles */
+.input_err {
+  color: #ff0000;
 }

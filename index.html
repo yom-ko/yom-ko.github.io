@@ -6,23 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="app.css">
-  <title>Test</title>
+  <title>Ось-2</title>
 </head>
 
 <body>
-  <div class="wrapper">
+<div class="main_wrapper">
     <div class="expression">
-      <form action="#">
-        <input class="exp_summand_1" type="number" name="" id=""> &nbsp; &#43; &nbsp;
-        <input class="exp_summand_2" type="number" name="" id=""> &nbsp; &#61; &nbsp;
-        <input class="exp_sum" type="number" name="" id="">
-      </form>
+      <span class="exp_summand_1">7</span> &nbsp; &#43; &nbsp;
+      <span class="exp_summand_2">4</span> &nbsp; &#61; &nbsp;
+      <span class="exp_sum_question">&#63;</span>
     </div>
     <div class="scale">
-      <div class="arrow-1"></div>
-      <div class="arrow-2"></div>
+      <div class="arrow_1_wrapper">
+        <input class="arrow_1_summand" type="number" min="0" autofocus>
+        <div class="arrow_1"></div>
+        <div class="arrow_ending"></div>
+      </div>
+      <div class="arrow_2_wrapper">
+        <input class="arrow_2_summand" type="number" min="0">
+        <div class="arrow_2"></div>
+        <div class="arrow_ending"></div>
+      </div>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
 
