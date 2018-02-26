@@ -36,12 +36,26 @@
 
 /* Arrow summands and arrow styles */
 .arrow_1_wrapper {
+  display: none;
   position: relative;
   left: 35px;
   bottom: 115px;
 }
 
+.arrow_2_wrapper {
+  display: none;
+  position: relative;
+  left: 33px;
+  bottom: 242px;
+}
+
 .arrow_1_summand {
+  display: block;
+  width: 30px;
+  margin: 0 auto;
+}
+
+.arrow_2_summand {
   display: block;
   width: 30px;
   margin: 0 auto;
@@ -53,18 +67,6 @@
   border-color: #AF5F85 #AF5F85 transparent #AF5F85;
   border-radius: 200px 200px 0 0;
   margin-top: 15px;
-}
-
-.arrow_2_wrapper {
-  position: relative;
-  left: 33px;
-  bottom: 242px;
-}
-
-.arrow_2_summand {
-  display: block;
-  width: 30px;
-  margin: 0 auto;
 }
 
 .arrow_2 {
