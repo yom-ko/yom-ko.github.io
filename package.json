@@ -4,14 +4,10 @@
   "main": "index.html",
   "license": "MIT",
   "dependencies": {
-    "ajv": "^5.0.0",
     "global": "^4.3.2"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
     "gulp": "^3.9.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-plumber": "^1.2.0",
