@@ -3,15 +3,10 @@ const gulp = require('gulp');
 const plugins = require('gulp-load-plugins')();
 
 // Load utility npm modules
-// const del = require('del');
 const sequence = require('run-sequence');
 const browserSync = require('browser-sync').create();
 
-
 // Task definitions start here
-
-// Development Tasks
-// -----------------
 
 // Start browserSync server
 gulp.task('browserSync', () => {
