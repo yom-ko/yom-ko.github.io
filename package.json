@@ -1,8 +1,9 @@
 {
   "name": "yom-ko.github.io",
   "version": "1.0.0",
-  "main": "index.html",
   "license": "MIT",
+  "private": true,
+  "main": "index.html",
   "dependencies": {
     "global": "^4.3.2"
   },
