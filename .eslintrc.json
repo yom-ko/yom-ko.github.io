@@ -4,17 +4,13 @@
     "es6": true,
     "jquery": true
   },
-
-  "extends": "airbnb",
-  "plugins": [
-    "import"
-  ],
-
+  "extends": "airbnb-base",
+  "plugins": ["import"],
   "rules": {
     "func-names": ["error", "never"],
+    "generator-star-spacing": ["error", "before"],
     "no-console": ["off"],
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-    "generator-star-spacing": ["error", "before"],
     "yield-star-spacing": ["error", "before"]
   }
 }

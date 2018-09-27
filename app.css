@@ -4,7 +4,6 @@
   margin: 100px auto 0 auto;
 }
 
-
 /* Expression styles */
 .expression {
   display: table;
@@ -14,7 +13,7 @@
 }
 
 .exp_summand_err {
-  background-color: #FCA748;
+  background-color: #fca748;
 }
 
 .exp_sum_input {
@@ -22,7 +21,6 @@
   margin-top: 2px;
   vertical-align: 3px;
 }
-
 
 /* Scale styles */
 .scale {
@@ -32,7 +30,6 @@
   background-image: url('/sprite.png');
   background-repeat: no-repeat;
 }
-
 
 /* Arrow summands and arrow styles */
 .arrow_1_wrapper {
@@ -63,20 +60,19 @@
 
 .arrow_1 {
   height: 90px;
-  border: 2px solid #AF5F85;
-  border-color: #AF5F85 #AF5F85 transparent #AF5F85;
+  border: 2px solid #af5f85;
+  border-color: #af5f85 #af5f85 transparent #af5f85;
   border-radius: 200px 200px 0 0;
   margin-top: 15px;
 }
 
 .arrow_2 {
-  border: 2px solid #AF5F85;
-  border-color: #AF5F85 #AF5F85 transparent #AF5F85;
+  border: 2px solid #af5f85;
+  border-color: #af5f85 #af5f85 transparent #af5f85;
   border-radius: 200px 200px 0 0;
   margin-top: 15px;
   height: 90px;
 }
-
 
 /* Arrow summand shared styles */
 .arrow_summand_correct {
@@ -88,14 +84,13 @@
 
 .arrow_ending {
   float: right;
-  border: solid #AF5F85;
+  border: solid #af5f85;
   border-width: 0 2px 2px 0;
   padding: 4px;
   margin-top: -12px;
   margin-right: -4px;
   transform: rotate(45deg);
 }
-
 
 /* Shared styles */
 .input_err {

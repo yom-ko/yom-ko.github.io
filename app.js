@@ -5,12 +5,12 @@ $(() => {
 
   // Auto generate summand1 (a) within the given range [6-9]
   const summand1 = (function (min, max) {
-    return Math.floor(Math.random() * ((max - min) + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }(6, 9));
 
   // Auto generate summand2 (b) considering that a+b must be within the given range [11-14]
   const summand2 = (function getSummand2(min, max) {
-    const x = Math.floor(Math.random() * ((8 - 0) + 1)) + 0;
+    const x = Math.floor(Math.random() * (8 - 0 + 1)) + 0;
     const sum = summand1 + x;
 
     if (sum >= min && sum <= max) {
@@ -101,6 +101,7 @@ $(() => {
 
       // Fade the arrow 2 in view
       $arrow2Wrapper.fadeIn(1500);
+
       // ...and focus on its input field
       setTimeout(() => {
         $arrow2Wrapper.children('.arrow_2_summand').focus();

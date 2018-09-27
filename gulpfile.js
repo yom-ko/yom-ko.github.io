@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create();
 // Start browserSync server
 gulp.task('browserSync', () => {
   browserSync.init({
-    host: '192.168.1.9',
+    host: '192.168.1.10',
     server: {
       baseDir: ['./'],
     },
