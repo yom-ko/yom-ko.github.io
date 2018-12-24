@@ -3,33 +3,28 @@ const gulp = require('gulp');
 const plugins = require('gulp-load-plugins')();
 
 // Load utility npm modules
-const sequence = require('run-sequence');
-const browserSync = require('browser-sync').create();
-
-// Task definitions start here
+const browsersync = require('browser-sync').create();
 
 // Start browserSync server
-gulp.task('browserSync', () => {
-  browserSync.init({
+gulp.task('serve', () => {
+  browsersync.init({
     host: '192.168.1.10',
     server: {
-      baseDir: ['./'],
+      baseDir: './',
     },
-    reloadDelay: 1800,
+    reloadOnRestart: true,
+    reloadDelay: 1000,
     notify: false,
+    open: false,
   });
 });
 
 // Set watchers
 gulp.task('watch', () => {
   plugins.watch(['*.html', '*.js', '*.css'], () => {
-    browserSync.reload();
+    browsersync.reload();
   });
 });
 
-// Build Sequences
-// ---------------
-
-gulp.task('default', () => {
-  sequence(['browserSync'], 'watch');
-});
+// Serve and watch files
+gulp.task('default', gulp.series('serve', 'watch'));
